@@ -1,0 +1,6 @@
+.main-logo-container img {
+    transition: all 0.4s ease;
+}
+.main-logo-container img:hover {
+    transform: scale(1.05);
+}
