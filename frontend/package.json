@@ -1,5 +1,5 @@
 {
-  "name": "equilibrium-frontend",
+  "name": "talentotech-form-frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,14 +13,11 @@
     "moment": "^2.30.1",
     "react": "^18.3.1",
     "react-awesome-reveal": "^4.2.14",
-    "react-bootstrap": "^2.10.5",
     "react-dom": "^18.3.1",
     "react-icons": "^5.3.0",
     "react-router-dom": "^6.26.2",
-    "react-slick": "^0.30.2",
     "react-spinners": "^0.14.1",
-    "react-toastify": "^10.0.5",
-    "slick-carousel": "^1.8.1"
+    "react-toastify": "^10.0.5"
   },
   "devDependencies": {
     "@types/react": "^18.3.11",
