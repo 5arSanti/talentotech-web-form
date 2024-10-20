@@ -1,4 +1,6 @@
 .barra-superior-govco {
+	width: 100%;
+
 	background-color: var(--navbar-color);
 	height: 48px;
 	padding: 0 86px;

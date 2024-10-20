@@ -28,6 +28,7 @@
     --white-095: rgba(255,255,255,0.95);
 
     --black: rgba(0,0,0,1);
+    --black-01: rgba(0,0,0,0.1);
     --black-025: rgba(0,0,0,0.25);
     --black-05: rgba(0,0,0,0.5);
 
@@ -142,4 +143,8 @@ svg {
 
 .white-color {
     color: var(--white) !important;
+}
+
+.relative {
+    position: relative;
 }

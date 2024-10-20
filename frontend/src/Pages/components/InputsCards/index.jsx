@@ -14,14 +14,14 @@ const InputCard = ({
     className="input-container", 
     haveLabel=true
 }) => {
-    
+
     return(
         <div className={`${className}`}>
             {haveLabel && <label htmlFor={id}>{label} {required && "*"}</label>}
             
             <input
                 type={type}
-                placeholder={placeholder}
+                placeholder={label}
                 name={id}
                 id={id}
                 onChange={(event) => {onChange(event.target.value)}}
@@ -32,16 +32,17 @@ const InputCard = ({
     );
 }
 
-const OptionInputCard = ({id, label, array=[], onChange, defaultValue=0, none=false, padding=15}) => {
+const OptionInputCard = ({id, label, array=[], onChange, defaultValue=0, none=false, padding=15, required=true}) => {
     return(
         <div className="input-container">
-            <label htmlFor={id}>{label} </label>
+            <label htmlFor={id}>{label} {required && "*"}</label>
             <select 
                 name={id} 
                 id={id}
                 onChange={(event) => {onChange(event.target.value)}}
                 value={defaultValue}
                 style={{padding: padding}}
+                required={required}
             >
                 {none && 
                     <option value="">Seleccionar</option>

@@ -1,0 +1,5 @@
+.main-container {
+    background-image: url(../../../src/assets/Fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

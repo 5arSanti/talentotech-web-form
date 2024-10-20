@@ -7,6 +7,8 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 5px;
+
+	transition: all 0.4s ease;
 }
 
 .input-container label{
@@ -15,6 +17,9 @@ textarea {
 	font-style: italic;
     color: var(--text-color);
     padding-left: 5px;
+
+	transition: all 0.4s ease;
+
 }
 
 
@@ -26,12 +31,13 @@ textarea {
     min-height: 75px;
 }
 .input-container input, .input-container textarea {
+	transition: all 0.4s ease;
+
     background-color: transparent;
     color: var(--text-color);
     padding: 10px;
 
 	border: none;
-	border-radius: 10px;
 	border-bottom: 3px solid;
     border-image: linear-gradient(90deg, var(--pallete-1) 0%, rgba(0,212,255,0) 100%);
     border-image-slice: 1;
@@ -52,47 +58,28 @@ textarea {
 
 /* Select */
 .input-container select {
+	transition: all 0.4s ease;
+
     background-color: transparent;
-    border: 1px solid var(--lines-color);
-	color: var(--lines-color);
+
+	border: none;
+	border-bottom: 3px solid;
+    border-image: linear-gradient(90deg, var(--pallete-1) 0%, rgba(0,212,255,0) 100%);
+    border-image-slice: 1;
+
+	color: var(--text-color);
     cursor: pointer;
 }
 .input-container select:focus {
     outline: none;
 }
 
-/* Input Card 2 */
-.input2-card-container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-.input2-card-container label{
-    font-size: 12px;
-    font-weight: bold;
-    color: var(--text-color);
-    padding-left: 5px;
-}
-.input2-card-container input{
-	background-color: transparent;
-    color: var(--lines-color);
-    padding: 15px 20px;
-    border-radius: 30px;
 
-    border: 1px solid var(--lines-color);
-    outline: none;
-
-	transition: all 0.1s ease;
-}
-.input2-card-container input::placeholder{
-	color: var(--lines-color);
-}
-.input2-card-container input:focus, .input2-container input:hover{
-    border: 1px solid var(--gov-accesibility-card);
-	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.14);
-	-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.14);
-	-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.14);
+/* Hover input and select */
+.input-container:hover label, 
+.input-container:hover label
+{
+	transform: translateX(5px);
 }
 
 /* Input File */

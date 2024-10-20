@@ -5,6 +5,8 @@ import { HashRouter, Navigate, useLocation, useRoutes } from "react-router-dom";
 // CSS
 import './App.css'
 import './App.css'
+import "./styles.css"
+
 import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -23,6 +25,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import { GovNavbar } from "../components/GovNavbars";
 import { TalentoTechNav } from "../components/TalentoTechNav";
+import { WrapperContainer2 } from "../components/WrapperContainers";
 
 const Wrapper = ({children}) => {
     const location = useLocation();
@@ -50,9 +53,11 @@ const App = () => {
         <AppProvider>
             <HashRouter>
                 <Wrapper>
-                    <GovNavbar/>
-                    <TalentoTechNav/>
-                    <AppRoutes/>
+                    <WrapperContainer2 className="main-container relative" padding={0} gap={0} flexDirection="column" justifyContent="center" alignItems="center">
+                        <GovNavbar/>
+                        <TalentoTechNav/>
+                        <AppRoutes/>
+                    </WrapperContainer2>
                 </Wrapper>
             </HashRouter>
         </AppProvider>

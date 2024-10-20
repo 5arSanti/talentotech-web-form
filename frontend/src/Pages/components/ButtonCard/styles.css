@@ -2,20 +2,21 @@
     width: 100%;
     background-color: transparent;
 
-    /* border: 1px solid var(--lines-color); */
     border-style: solid;
-    border-color: var(--lines-color);
+    border-color: var(--pallete-1);
+    border-radius: 20px;
+
     cursor: pointer;
 
     color: var(--text-color);
     font-weight: bold;
     font-size: 16px;
 	opacity: 0.9;
-	transition: background-color 0.20s ease;
+	transition: all 0.4s ease;
 }
 .button-card-container:hover {
-    background-color: var(--lines-color);
-    color: var(--white-to-black-color);
+    background-color: var(--pallete-1);
+    color: var(--white);
 }
 .button-card-container svg {
     width: 20px;
